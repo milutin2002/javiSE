@@ -1,0 +1,12 @@
+const express=require('express');
+const router=express.Router();
+const majstor=require('../Models/majstor');
+const {storage}=require('../storage');
+const {isMajstor, isKorisnik}=require('../Middleware/checkAuth');
+const {signup,signin,update,changePassword,getProfile,getInfo}=require('../Controllers/majstor');
+router.post("/signup",signup("majstor"));
+router.post("/signin",signin("majstor"));
+router.put("/",isMajstor,storage.single("image"),update);
+router.get("/profile",isMajstor,getProfile);
+router.get("/:id",getInfo);
+module.exports=router;
