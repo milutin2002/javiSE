@@ -49,6 +49,7 @@ Provides **REST API** endpoints (Express.js) and **real-time communication** (We
 
 ### 📂 Project Structure
 
+<pre>
 Backend/
 │── src/
 │ ├── server.js # Express + WebSocket entry point
@@ -62,6 +63,7 @@ Backend/
 │── .env.example
 │── package.json
 │── README.md
+</pre>
 
 ### Setup and installation
 
