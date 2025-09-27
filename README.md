@@ -65,8 +65,9 @@ Backend/
 
 ### Setup and installation
 
-cd javiSE/Aplikacija/Backend
-npm install
+<pre><code>
+cd javiSE/Aplikacija/Backend && npm install
+</code></pre>
 
 ### Configure environment
 
