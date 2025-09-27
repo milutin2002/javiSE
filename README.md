@@ -27,3 +27,57 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## javiSE · Backend
+
+Backend server for the **javiSE** application.  
+Provides **REST API** endpoints (Express.js) and **real-time communication** (WebSocket).
+
+---
+
+### 🚀 Tech Stack
+
+- Node.js
+- Express.js
+- WebSocket (`ws` or `socket.io`)
+- dotenv for configuration
+- (Optional) Database: MongoDB, PostgreSQL, MySQL, or Neo4j/Redis
+- JWT authentication
+- CORS for frontend access
+
+---
+
+### 📂 Project Structure
+
+Backend/
+│── src/
+│ ├── server.js # Express + WebSocket entry point
+│ ├── routes/ # REST routes
+│ ├── controllers/ # Business logic
+│ ├── websocket/ # WebSocket handlers
+│ ├── middleware/ # Auth, error handling
+│ ├── models/ # Database models
+│ └── utils/ # Helpers
+│
+│── .env.example
+│── package.json
+│── README.md
+
+### Setup and installation
+
+cd javiSE/Aplikacija/Backend
+npm install
+
+### Configure environment
+
+Create .env:
+
+MONGO_USERNAME=username
+MONGO_PASSWORD=mongo_password
+JSON_SECRET=secretJWT
+
+### Run backend Server
+
+<pre><code>
+node index.js
+</code></pre>
