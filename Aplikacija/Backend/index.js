@@ -55,6 +55,7 @@ const io = socketIo(server, {
     }
   });
 io.on('connection',(socket)=>{
+    console.log(socket)
     console.log("New client je povezan");
     socket.on('joinRoom', (room) => {
         socket.join(room);
