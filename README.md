@@ -75,10 +75,13 @@ cd javiSE/Aplikacija/Backend && npm install
 
 Create .env:
 
+<pre>
+  <code>
 MONGO_USERNAME=username
 MONGO_PASSWORD=mongo_password
 JSON_SECRET=secretJWT
-
+    </code>
+</pre>
 ### Run backend Server
 
 <pre><code>
