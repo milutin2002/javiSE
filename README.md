@@ -87,3 +87,22 @@ JSON_SECRET=secretJWT
 <pre><code>
 node index.js
 </code></pre>
+
+## Run with docker
+
+### For windows users
+<pre>
+  <code>
+    docker compose build
+    docker compose up -d
+  </code>
+</pre>
+
+### For linux users
+
+<pre>
+  <code>
+    sudo docker compose build
+    sudo docker compose up -d
+  </code>
+</pre>
