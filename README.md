@@ -93,6 +93,7 @@ node index.js
 ### For windows users
 <pre>
   <code>
+    cd Aplikacija
     docker compose build
     docker compose up -d
   </code>
@@ -102,6 +103,7 @@ node index.js
 
 <pre>
   <code>
+    cd Aplikacija
     sudo docker compose build
     sudo docker compose up -d
   </code>
